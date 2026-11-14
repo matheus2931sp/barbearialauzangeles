@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barbearia Lauzangeles - Site Oficial | Zona Norte SP</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Bebas Neue', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          colors: {
+            bgMain: '#09090B',
+            bgCard: '#121215',
+            bgCardInner: '#18181C',
+            brandRed: '#E11D2E',
+            brandRedHover: '#BE1221',
+            brandAmber: '#F59E0B',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #09090B;
+      color: #FAFAFA;
+    }
+    .hero-overlay {
+      background: radial-gradient(circle at 75% 40%, rgba(225, 29, 46, 0.12), transparent 45%),
+                  linear-gradient(to right, rgba(9, 9, 11, 0.96) 40%, rgba(9, 9, 11, 0.82) 100%),
+                  url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body class="font-sans antialiased selection:bg-brandRed selection:text-white">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 w-full z-50 bg-bgMain/95 backdrop-blur-md border-b border-zinc-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3.5 flex items-center justify-between gap-4">
+      <!-- Logo -->
+      <a href="#inicio" class="flex items-center gap-3 shrink-0">
+        <div class="w-10 h-10 rounded-full border border-brandRed/70 bg-brandRed/10 flex items-center justify-center text-brandAmber">
+          <i class="fa-solid fa-crown text-sm"></i>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="font-display text-2xl tracking-wider text-white leading-none">LAUZANGELES</span>
+            <span class="bg-brandRed text-white text-[9px] font-extrabold uppercase px-1.5 py-0.5 rounded leading-tight">
+              SINCE 2015
+            </span>
+          </div>
+          <span class="text-[9px] tracking-[0.22em] text-zinc-400 font-semibold uppercase block mt-0.5">
+            BARBA • CABELO • BIGODE
+          </span>
+        </div>
+      </a>
+
+      <!-- Menu Links -->
+      <nav class="hidden lg:flex items-center gap-6 text-xs font-semibold text-zinc-300">
+        <a href="#inicio" class="hover:text-white transition">Início</a>
+        <a href="#servicos" class="hover:text-white transition">Serviços & Preços</a>
+        <a href="#unidades" class="hover:text-white transition">Nossas Unidades</a>
+        <a href="#estrutura" class="hover:text-white transition">Estrutura & Cortes</a>
+        <a href="#avaliacoes" class="hover:text-white transition flex items-center gap-1">
+          Avaliações <span class="text-brandAmber font-bold">5.0 ★</span>
+        </a>
+      </nav>
+
+      <!-- Botões Ação Navbar -->
+      <div class="flex items-center gap-2.5">
+        <button onclick="abrirSimulador()"
+                class="hidden sm:inline-flex items-center justify-center bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-white text-xs font-bold px-4 py-2.5 rounded-lg transition cursor-pointer">
+          Simular Horário
+        </button>
+        <a href="https://wa.me/5511974388689?text=Salve!%20Vim%20pelo%20site%20oficial%20da%20Barbearia%20Lauzangeles%20e%20quero%20agendar%20um%20hor%C3%A1rio."
+           target="_blank"
+           class="bg-brandRed hover:bg-brandRedHover text-white text-xs font-bold px-4 py-2.5 rounded-lg transition flex items-center gap-2 shadow-lg shadow-brandRed/25">
+          <i class="fa-brands fa-whatsapp text-base"></i>
+          <span>Agendar Horário</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="hero-overlay min-h-screen flex items-center pt-28 pb-16 px-4 sm:px-6 border-b border-zinc-800/80">
+    <div class="max-w-7xl mx-auto w-full grid lg:grid-cols-12 gap-10 items-center">
+      
+      <!-- Coluna Esquerda -->
+      <div class="lg:col-span-7">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-zinc-900/90 border border-brandAmber/40 text-brandAmber text-xs font-bold uppercase tracking-wider mb-6">
+          <span>★★★★★</span>
+          <span class="text-white">NOTA 5.0 NO GOOGLE (+600 AVALIAÇÕES)</span>
+        </div>
+
+        <h1 class="font-display text-6xl sm:text-7xl md:text-8xl text-white uppercase leading-[0.95] tracking-tight mb-6">
+          TRADIÇÃO, ESTILO E<br>
+          RESPEITO NA <span class="text-brandRed">ZONA<br>NORTE</span> DESDE 2015
+        </h1>
+
+        <p class="text-zinc-300 text-base sm:text-lg leading-relaxed max-w-xl mb-8">
+          Mais que um corte na régua: uma experiência de resenha, café gelado e atendimento de primeira no
+          <strong class="text-white">Tremembé, Mandaqui e Cachoeirinha</strong>. Chega pra dar aquele talento no visual com quem é referência na ZN.
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 mb-12">
+          <a href="https://wa.me/5511974388689?text=Salve!%20Quero%20agendar%20meu%20hor%C3%A1rio%20na%20Barbearia%20Lauzangeles."
+             target="_blank"
+             class="bg-brandRed hover:bg-brandRedHover text-white font-bold px-7 py-4 rounded-xl transition flex items-center justify-center gap-2.5 text-sm shadow-xl shadow-brandRed/25">
+            <i class="fa-brands fa-whatsapp text-xl"></i>
+            Agendar pelo WhatsApp
+          </a>
+          <a href="#unidades"
+             class="bg-zinc-900/90 hover:bg-zinc-800 border border-zinc-700 text-white font-bold px-7 py-4 rounded-xl transition flex items-center justify-center gap-2 text-sm">
+            <i class="fa-solid fa-location-dot text-brandRed"></i>
+            Ver Nossas 3 Unidades
+          </a>
+        </div>
+
+        <!-- Métricas -->
+        <div class="grid grid-cols-3 gap-6 pt-8 border-t border-zinc-800/90 max-w-lg">
+          <div>
+            <p class="font-display text-3xl sm:text-4xl text-white">+10 ANOS</p>
+            <p class="text-xs text-zinc-400 mt-0.5">De história na ZN</p>
+          </div>
+          <div>
+            <p class="font-display text-3xl sm:text-4xl text-brandAmber">5.0 ★</p>
+            <p class="text-xs text-zinc-400 mt-0.5">+600 notas máximas</p>
+          </div>
+          <div>
+            <p class="font-display text-3xl sm:text-4xl text-brandRed">3 LOJAS</p>
+            <p class="text-xs text-zinc-400 mt-0.5">Tremembé • Mandaqui • Cachoeirinha</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coluna Direita (Card Interativo Igual da Prévia) -->
+      <div class="lg:col-span-5">
+        <div class="bg-bgCard/95 border border-zinc-800 rounded-3xl p-5 sm:p-6 shadow-2xl">
+          <!-- Status Topo -->
+          <div class="flex items-center justify-between text-xs pb-4 mb-4 border-b border-zinc-800/80">
+            <span class="flex items-center gap-2 text-emerald-400 font-bold tracking-wider uppercase">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+              ABERTO HOJE • ATÉ 20:00
+            </span>
+            <span class="px-2.5 py-1 rounded-full bg-zinc-900 border border-zinc-700 text-zinc-300 font-semibold text-[11px]">
+              Since 2015
+            </span>
+          </div>
+
+          <!-- Brasão Central -->
+          <div class="rounded-2xl border border-brandRed/40 bg-gradient-to-b from-zinc-900 to-black p-6 text-center mb-4">
+            <i class="fa-solid fa-crown text-brandAmber text-2xl mb-2"></i>
+            <p class="text-[10px] tracking-[0.28em] text-zinc-400 font-bold uppercase mb-2">
+              BARBA • CABELO • BIGODE
+            </p>
+            <div class="inline-block bg-brandRed text-white font-display text-3xl tracking-widest px-6 py-1 rounded-lg mb-2 shadow-md">
+              BARBEARIA
+            </div>
+            <p class="font-display text-3xl tracking-[0.18em] text-white leading-none">
+              LAUZANGELES
+            </p>
+            <p class="text-[10px] tracking-[0.25em] text-brandAmber font-bold uppercase mt-2">
+              — ZONA NORTE • SP —
+            </p>
+          </div>
+
+          <!-- Unidade Matriz Destaque -->
+          <a href="https://maps.app.goo.gl/ozhWeGxKmMx3X1rP6" target="_blank"
+             class="block rounded-2xl border border-brandRed/60 bg-bgCardInner hover:bg-zinc-800/80 p-4 mb-3 transition group">
+            <div class="flex items-center justify-between">
+              <div>
+                <span class="inline-block bg-brandRed text-white text-[9px] font-extrabold uppercase px-2 py-0.5 rounded mb-1.5">
+                  MATRIZ • 5.0 ★
+                </span>
+                <h3 class="text-white font-bold text-sm">Unidade Tremembé</h3>
+                <p class="text-zinc-400 text-xs mt-0.5">Rua Mamud Rahd, 47</p>
+              </div>
+              <div class="w-9 h-9 rounded-xl bg-zinc-900 border border-zinc-700 flex items-center justify-center text-white group-hover:bg-brandRed group-hover:border-brandRed transition">
+                <i class="fa-solid fa-diamond-turn-right"></i>
+              </div>
+            </div>
+          </a>
+
+          <!-- Outras 2 Unidades -->
+          <div class="grid grid-cols-2 gap-3 mb-4">
+            <a href="https://www.google.com/maps/search/?api=1&query=Avenida+Direitos+Humanos+2360+Mandaqui+Sao+Paulo" target="_blank"
+               class="rounded-xl border border-zinc-800 bg-bgCardInner hover:border-zinc-600 p-3.5 transition">
+              <h4 class="text-white font-bold text-xs">Unidade Mandaqui</h4>
+              <p class="text-zinc-400 text-[11px] mt-1">Av. Direitos Humanos, 2360</p>
+            </a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Rua+Agua+Preta+18+Cachoeirinha+Sao+Paulo" target="_blank"
+               class="rounded-xl border border-zinc-800 bg-bgCardInner hover:border-zinc-600 p-3.5 transition">
+              <h4 class="text-white font-bold text-xs">Unidade Cachoeirinha</h4>
+              <p class="text-zinc-400 text-[11px] mt-1">Rua Água Preta, 18</p>
+            </a>
+          </div>
+
+          <!-- Botão Branco Agendamento Rápido -->
+          <button onclick="abrirSimulador()"
+                  class="w-full bg-white hover:bg-zinc-200 text-black font-extrabold text-xs uppercase tracking-wider py-4 rounded-xl transition flex items-center justify-center gap-2 cursor-pointer">
+            <i class="fa-regular fa-calendar-check text-base"></i>
+            AGENDAMENTO RÁPIDO ONLINE
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Serviços & Preços -->
+  <section id="servicos" class="py-20 px-4 sm:px-6 bg-bgCard border-b border-zinc-800/80">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+        <div>
+          <span class="text-brandRed font-bold text-xs uppercase tracking-[0.25em]">Tabela Oficial</span>
+          <h2 class="font-display text-4xl sm:text-5xl text-white uppercase mt-1">Serviços & Preços</h2>
+        </div>
+        <p class="text-zinc-400 text-sm max-w-md">
+          Selecione o serviço desejado e envie direto para o WhatsApp da unidade escolhida.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="bg-bgMain border border-zinc-800 hover:border-brandRed/60 rounded-2xl p-6 transition">
+          <div class="flex justify-between items-start mb-3">
+            <h3 class="text-lg font-bold text-white">Corte na Régua</h3>
+            <span class="text-brandAmber font-extrabold text-lg">R$ 45</span>
+          </div>
+          <p class="text-zinc-400 text-xs leading-relaxed mb-5">Degradê navalhado, social, corte na tesoura e finalização com pomada premium.</p>
+          <button onclick="abrirSimulador('Corte na Régua (R$ 45)')" class="text-xs font-bold text-brandRed hover:underline uppercase tracking-wider cursor-pointer">
+            Agendar este serviço →
+          </button>
+        </div>
+
+        <div class="bg-bgMain border border-zinc-800 hover:border-brandRed/60 rounded-2xl p-6 transition">
+          <div class="flex justify-between items-start mb-3">
+            <h3 class="text-lg font-bold text-white">Barboterapia</h3>
+            <span class="text-brandAmber font-extrabold text-lg">R$ 40</span>
+          </div>
+          <p class="text-zinc-400 text-xs leading-relaxed mb-5">Toalha quente, vapor de ozônio, esfoliação, alinhamento na navalha e hidratação.</p>
+          <button onclick="abrirSimulador('Barboterapia (R$ 40)')" class="text-xs font-bold text-brandRed hover:underline uppercase tracking-wider cursor-pointer">
+            Agendar este serviço →
+          </button>
+        </div>
+
+        <div class="bg-bgMain border-2 border-brandRed rounded-2xl p-6 relative">
+          <span class="absolute -top-3 right-5 bg-brandRed text-white text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-full">
+            Mais Pedido
+          </span>
+          <div class="flex justify-between items-start mb-3">
+            <h3 class="text-lg font-bold text-white">Combo Cabelo + Barba</h3>
+            <span class="text-brandAmber font-extrabold text-lg">R$ 75</span>
+          </div>
+          <p class="text-zinc-300 text-xs leading-relaxed mb-5">O tratamento completo Lauzangeles: corte impecável + barboterapia com toalha quente.</p>
+          <button onclick="abrirSimulador('Combo Cabelo + Barba (R$ 75)')" class="text-xs font-bold text-white bg-brandRed hover:bg-brandRedHover px-4 py-2 rounded-lg uppercase tracking-wider cursor-pointer transition">
+            Agendar Combo →
+          </button>
+        </div>
+
+        <div class="bg-bgMain border border-zinc-800 hover:border-brandRed/60 rounded-2xl p-6 transition">
+          <div class="flex justify-between items-start mb-3">
+            <h3 class="text-lg font-bold text-white">Sobrancelha na Navalha</h3>
+            <span class="text-brandAmber font-extrabold text-lg">R$ 15</span>
+          </div>
+          <p class="text-zinc-400 text-xs leading-relaxed mb-5">Alinhamento limpo e natural na navalha ou pinça.</p>
+          <button onclick="abrirSimulador('Sobrancelha (R$ 15)')" class="text-xs font-bold text-brandRed hover:underline uppercase tracking-wider cursor-pointer">
+            Agendar este serviço →
+          </button>
+        </div>
+
+        <div class="bg-bgMain border border-zinc-800 hover:border-brandRed/60 rounded-2xl p-6 transition">
+          <div class="flex justify-between items-start mb-3">
+            <h3 class="text-lg font-bold text-white">Pigmentação / Perfil</h3>
+            <span class="text-brandAmber font-extrabold text-lg">R$ 30</span>
+          </div>
+          <p class="text-zinc-400 text-xs leading-relaxed mb-5">Destaque nos contornos do degradê e barba com aspecto natural.</p>
+          <button onclick="abrirSimulador('Pigmentação (R$ 30)')" class="text-xs font-bold text-brandRed hover:underline uppercase tracking-wider cursor-pointer">
+            Agendar este serviço →
+          </button>
+        </div>
+
+        <div class="bg-bgMain border border-zinc-800 hover:border-brandRed/60 rounded-2xl p-6 transition">
+          <div class="flex justify-between items-start mb-3">
+            <h3 class="text-lg font-bold text-white">Platinado / Reflexo</h3>
+            <span class="text-brandAmber font-extrabold text-lg">Sob Consulta</span>
+          </div>
+          <p class="text-zinc-400 text-xs leading-relaxed mb-5">Nevou profissional com proteção dos fios e matização perfeita.</p>
+          <button onclick="abrirSimulador('Platinado / Reflexo')" class="text-xs font-bold text-brandRed hover:underline uppercase tracking-wider cursor-pointer">
+            Consultar Horário →
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Estrutura & Cortes -->
+  <section id="estrutura" class="py-20 px-4 sm:px-6 bg-bgMain border-b border-zinc-800/80">
+    <div class="max-w-7xl mx-auto">
+      <div class="mb-12">
+        <span class="text-brandRed font-bold text-xs uppercase tracking-[0.25em]">Ambiente & Estilo</span>
+        <h2 class="font-display text-4xl sm:text-5xl text-white uppercase mt-1">Estrutura & Cortes</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="rounded-2xl overflow-hidden border border-zinc-800 h-72 relative group">
+          <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80" alt="Cadeiras da barbearia" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent flex items-end p-5">
+            <span class="font-bold text-sm text-white">Cadeiras Clássicas & Conforto</span>
+          </div>
+        </div>
+        <div class="rounded-2xl overflow-hidden border border-zinc-800 h-72 relative group">
+          <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=800&q=80" alt="Corte degradê" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent flex items-end p-5">
+            <span class="font-bold text-sm text-white">Acabamento na Régua</span>
+          </div>
+        </div>
+        <div class="rounded-2xl overflow-hidden border border-zinc-800 h-72 relative group">
+          <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=80" alt="Barboterapia" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent flex items-end p-5">
+            <span class="font-bold text-sm text-white">Resenha & Atendimento Premium</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nossas Unidades -->
+  <section id="unidades" class="py-20 px-4 sm:px-6 bg-bgCard border-b border-zinc-800/80">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-14">
+        <span class="text-brandRed font-bold text-xs uppercase tracking-[0.25em]">Zona Norte • SP</span>
+        <h2 class="font-display text-4xl sm:text-5xl text-white uppercase mt-1">Nossas 3 Unidades</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-bgMain border-2 border-brandRed rounded-2xl p-6 flex flex-col justify-between">
+          <div>
+            <span class="inline-block bg-brandAmber text-black text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded mb-3">
+              Matriz • 5.0 ★ (+600 avaliações)
+            </span>
+            <h3 class="text-xl font-bold text-white mb-1">Unidade Tremembé</h3>
+            <p class="text-zinc-300 text-sm mb-4">Rua Mamud Rahd, 47 — Tremembé, São Paulo - SP</p>
+            <p class="text-xs text-zinc-400 mb-6"><i class="fa-regular fa-clock text-brandAmber mr-1.5"></i> Seg a Sáb: 09h às 20h</p>
+          </div>
+          <div class="space-y-2.5">
+            <a href="https://maps.app.goo.gl/ozhWeGxKmMx3X1rP6" target="_blank" class="block w-full text-center bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-white text-xs font-bold py-3 rounded-xl transition">
+              <i class="fa-solid fa-location-dot text-brandRed mr-1.5"></i> Ver no Google Maps
+            </a>
+            <button onclick="abrirSimulador('', 'Unidade Tremembé')" class="w-full bg-brandRed hover:bg-brandRedHover text-white text-xs font-bold py-3 rounded-xl transition cursor-pointer">
+              Agendar no Tremembé
+            </button>
+          </div>
+        </div>
+
+        <div class="bg-bgMain border border-zinc-800 rounded-2xl p-6 flex flex-col justify-between">
+          <div>
+            <span class="inline-block bg-zinc-800 text-zinc-300 text-[10px] font-bold uppercase px-2.5 py-0.5 rounded mb-3">
+              Zona Norte
+            </span>
+            <h3 class="text-xl font-bold text-white mb-1">Unidade Mandaqui</h3>
+            <p class="text-zinc-300 text-sm mb-4">Avenida Direitos Humanos, 2360 — Mandaqui, São Paulo - SP</p>
+            <p class="text-xs text-zinc-400 mb-6"><i class="fa-regular fa-clock text-brandAmber mr-1.5"></i> Seg a Sáb: 09h às 20h</p>
+          </div>
+          <div class="space-y-2.5">
+            <a href="https://www.google.com/maps/search/?api=1&query=Avenida+Direitos+Humanos+2360+Mandaqui+Sao+Paulo" target="_blank" class="block w-full text-center bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-white text-xs font-bold py-3 rounded-xl transition">
+              <i class="fa-solid fa-location-dot text-brandRed mr-1.5"></i> Ver no Google Maps
+            </a>
+            <button onclick="abrirSimulador('', 'Unidade Mandaqui')" class="w-full bg-brandRed hover:bg-brandRedHover text-white text-xs font-bold py-3 rounded-xl transition cursor-pointer">
+              Agendar no Mandaqui
+            </button>
+          </div>
+        </div>
+
+        <div class="bg-bgMain border border-zinc-800 rounded-2xl p-6 flex flex-col justify-between">
+          <div>
+            <span class="inline-block bg-zinc-800 text-zinc-300 text-[10px] font-bold uppercase px-2.5 py-0.5 rounded mb-3">
+              Zona Norte
+            </span>
+            <h3 class="text-xl font-bold text-white mb-1">Unidade Cachoeirinha</h3>
+            <p class="text-zinc-300 text-sm mb-4">Rua Água Preta, 18 — Cachoeirinha, São Paulo - SP</p>
+            <p class="text-xs text-zinc-400 mb-6"><i class="fa-regular fa-clock text-brandAmber mr-1.5"></i> Seg a Sáb: 09h às 20h</p>
+          </div>
+          <div class="space-y-2.5">
+            <a href="https://www.google.com/maps/search/?api=1&query=Rua+Agua+Preta+18+Cachoeirinha+Sao+Paulo" target="_blank" class="block w-full text-center bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-white text-xs font-bold py-3 rounded-xl transition">
+              <i class="fa-solid fa-location-dot text-brandRed mr-1.5"></i> Ver no Google Maps
+            </a>
+            <button onclick="abrirSimulador('', 'Unidade Cachoeirinha')" class="w-full bg-brandRed hover:bg-brandRedHover text-white text-xs font-bold py-3 rounded-xl transition cursor-pointer">
+              Agendar na Cachoeirinha
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Avaliações -->
+  <section id="avaliacoes" class="py-20 px-4 sm:px-6 bg-bgMain">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12">
+        <p class="text-brandAmber text-lg mb-1">★★★★★</p>
+        <h2 class="font-display text-4xl sm:text-5xl text-white uppercase">Nota 5.0 no Google</h2>
+        <p class="text-zinc-400 text-sm mt-2">Mais de 600 avaliações reais de clientes da Zona Norte.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-bgCard border border-zinc-800 rounded-2xl p-6">
+          <p class="text-brandAmber text-xs mb-3">★★★★★</p>
+          <p class="text-zinc-300 text-sm mb-4">"Atendimento impecável, degradê na régua e resenha da hora. Melhor barbearia do Tremembé sem dúvidas."</p>
+          <p class="text-white font-bold text-xs">Rafael Oliveira — Google Reviews</p>
+        </div>
+        <div class="bg-bgCard border border-zinc-800 rounded-2xl p-6">
+          <p class="text-brandAmber text-xs mb-3">★★★★★</p>
+          <p class="text-zinc-300 text-sm mb-4">"Corto há anos na Lauzangeles. Estrutura top, pontualidade e profissionais que realmente entendem do trampo."</p>
+          <p class="text-white font-bold text-xs">Lucas Mendes — Google Reviews</p>
+        </div>
+        <div class="bg-bgCard border border-zinc-800 rounded-2xl p-6">
+          <p class="text-brandAmber text-xs mb-3">★★★★★</p>
+          <p class="text-zinc-300 text-sm mb-4">"Barboterapia com toalha quente sensacional. Ambiente de respeito, recomendo demais!"</p>
+          <p class="text-white font-bold text-xs">Gabriel Santos — Google Reviews</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black border-t border-zinc-800 py-10 px-4 text-center">
+    <p class="font-display text-2xl text-white tracking-wider">BARBEARIA LAUZANGELES</p>
+    <p class="text-xs text-zinc-400 mt-1">Since 2015 • Tremembé • Mandaqui • Cachoeirinha</p>
+    <p class="text-xs text-zinc-500 mt-3">WhatsApp: (11) 97438-8689</p>
+  </footer>
+
+  <!-- Modal Simulador de Horário -->
+  <div id="modalSimulador" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-bgCard border border-zinc-700 rounded-3xl max-w-md w-full p-6 relative shadow-2xl">
+      <button onclick="fecharSimulador()" class="absolute top-5 right-5 text-zinc-400 hover:text-white text-lg cursor-pointer">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <span class="text-brandRed font-bold text-[11px] uppercase tracking-widest">Agendamento Rápido</span>
+      <h3 class="font-display text-3xl text-white uppercase mt-1 mb-5">Simular Horário</h3>
+
+      <form onsubmit="enviarWhatsApp(event)" class="space-y-4">
+        <div>
+          <label class="block text-xs font-bold text-zinc-300 mb-1.5">Seu Nome</label>
+          <input type="text" id="clienteNome" required placeholder="Ex: Matheus"
+                 class="w-full bg-bgMain border border-zinc-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brandRed">
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-zinc-300 mb-1.5">Unidade Preferida</label>
+          <select id="clienteUnidade" class="w-full bg-bgMain border border-zinc-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brandRed">
+            <option value="Unidade Tremembé">Tremembé — Rua Mamud Rahd, 47</option>
+            <option value="Unidade Mandaqui">Mandaqui — Av. Direitos Humanos, 2360</option>
+            <option value="Unidade Cachoeirinha">Cachoeirinha — Rua Água Preta, 18</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-zinc-300 mb-1.5">Serviço</label>
+          <select id="clienteServico" class="w-full bg-bgMain border border-zinc-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brandRed">
+            <option value="Combo Cabelo + Barba (R$ 75)">Combo Cabelo + Barba (R$ 75)</option>
+            <option value="Corte na Régua (R$ 45)">Corte na Régua (R$ 45)</option>
+            <option value="Barboterapia (R$ 40)">Barboterapia (R$ 40)</option>
+            <option value="Sobrancelha (R$ 15)">Sobrancelha na Navalha (R$ 15)</option>
+            <option value="Pigmentação (R$ 30)">Pigmentação / Perfil (R$ 30)</option>
+            <option value="Platinado / Reflexo">Platinado / Reflexo</option>
+          </select>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-zinc-300 mb-1.5">Dia</label>
+            <input type="date" id="clienteData" required
+                   class="w-full bg-bgMain border border-zinc-700 rounded-xl px-3 py-3 text-sm text-white focus:outline-none focus:border-brandRed">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-zinc-300 mb-1.5">Horário</label>
+            <select id="clienteHora" class="w-full bg-bgMain border border-zinc-700 rounded-xl px-3 py-3 text-sm text-white focus:outline-none focus:border-brandRed">
+              <option>09:00</option><option>10:00</option><option>11:00</option>
+              <option>13:00</option><option>14:00</option><option>15:00</option>
+              <option>16:00</option><option>17:00</option><option>18:00</option>
+              <option>19:00</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit"
+                class="w-full bg-brandRed hover:bg-brandRedHover text-white font-extrabold text-xs uppercase tracking-wider py-4 rounded-xl transition flex items-center justify-center gap-2 cursor-pointer mt-2">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          Confirmar Horário no WhatsApp
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Botão Flutuante WhatsApp -->
+  <a href="https://wa.me/5511974388689?text=Salve!%20Vim%20pelo%20site%20da%20Barbearia%20Lauzangeles%20e%20quero%20agendar%20um%20hor%C3%A1rio."
+     target="_blank"
+     class="fixed bottom-5 right-5 z-40 w-14 h-14 bg-emerald-500 hover:bg-emerald-400 text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition">
+    <i class="fa-brands fa-whatsapp text-3xl"></i>
+  </a>
+
+  <script>
+    function abrirSimulador(servico = '', unidade = '') {
+      if (servico) document.getElementById('clienteServico').value = servico;
+      if (unidade) document.getElementById('clienteUnidade').value = unidade;
+      document.getElementById('modalSimulador').classList.remove('hidden');
+    }
+
+    function fecharSimulador() {
+      document.getElementById('modalSimulador').classList.add('hidden');
+    }
+
+    function enviarWhatsApp(e) {
+      e.preventDefault();
+      const nome = document.getElementById('clienteNome').value;
+      const unidade = document.getElementById('clienteUnidade').value;
+      const servico = document.getElementById('clienteServico').value;
+      const data = document.getElementById('clienteData').value.split('-').reverse().join('/');
+      const hora = document.getElementById('clienteHora').value;
+
+      const msg = `Salve, Barbearia Lauzangeles! Quero confirmar um agendamento pelo site:\n\n` +
+                  `👤 *Nome:* ${nome}\n` +
+                  `📍 *Unidade:* ${unidade}\n` +
+                  `✂️ *Serviço:* ${servico}\n` +
+                  `📅 *Data:* ${data} às ${hora}\n\n` +
+                  `Tem disponibilidade nesse horário?`;
+
+      window.open(`https://wa.me/5511974388689?text=${encodeURIComponent(msg)}`, '_blank');
+      fecharSimulador();
+    }
+  </script>
+</body>
+</html>
